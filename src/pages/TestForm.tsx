@@ -135,7 +135,7 @@ export const TestForm: React.FC = () => {
       )}
 
       {/* Form Container */}
-      <form onSubmit={handleSubmit(onSubmit)} className="bg-white rounded-3xl border border-slate-200 p-6 md:p-8 space-y-6 shadow-sm">
+      <form onSubmit={handleSubmit(onSubmit)} className="bg-white rounded-[32px] border border-slate-150 p-6 md:p-8 space-y-6 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.025)]">
         
         {/* Core Metadata */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

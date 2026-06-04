@@ -109,39 +109,39 @@ export const Dashboard: React.FC = () => {
 
       {/* Quick Metrics */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
-          <div className="space-y-1">
-            <span className="text-xs font-heading font-semibold text-slate-400 uppercase tracking-wider">Total Tests</span>
+        <div className="bg-white p-6 rounded-[24px] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.015)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.03)] hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-between select-none group">
+          <div className="space-y-1.5">
+            <span className="text-xs font-heading font-bold text-slate-400 uppercase tracking-wider">Total Tests</span>
             <p className="text-3xl font-black text-slate-800 font-heading">{totalTests}</p>
           </div>
-          <div className="p-3 bg-slate-100 text-slate-600 rounded-xl">
-            <FileText size={20} />
+          <div className="p-3.5 bg-slate-50 text-slate-500 rounded-2xl group-hover:bg-slate-100 transition-colors">
+            <FileText size={22} />
           </div>
         </div>
 
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
-          <div className="space-y-1">
-            <span className="text-xs font-heading font-semibold text-slate-400 uppercase tracking-wider">Published</span>
+        <div className="bg-white p-6 rounded-[24px] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.015)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.03)] hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-between select-none group">
+          <div className="space-y-1.5">
+            <span className="text-xs font-heading font-bold text-slate-400 uppercase tracking-wider">Published</span>
             <p className="text-3xl font-black text-emerald-600 font-heading">{publishedTests}</p>
           </div>
-          <div className="p-3 bg-emerald-50 text-emerald-600 rounded-xl">
-            <CheckCircle size={20} />
+          <div className="p-3.5 bg-emerald-50 text-emerald-600 rounded-2xl group-hover:bg-emerald-100/60 transition-colors">
+            <CheckCircle size={22} />
           </div>
         </div>
 
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
-          <div className="space-y-1">
-            <span className="text-xs font-heading font-semibold text-slate-400 uppercase tracking-wider">Drafts</span>
+        <div className="bg-white p-6 rounded-[24px] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.015)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.03)] hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-between select-none group">
+          <div className="space-y-1.5">
+            <span className="text-xs font-heading font-bold text-slate-400 uppercase tracking-wider">Drafts</span>
             <p className="text-3xl font-black text-primary-600 font-heading">{draftTests}</p>
           </div>
-          <div className="p-3 bg-primary-50 text-primary-600 rounded-xl">
-            <Settings size={20} />
+          <div className="p-3.5 bg-primary-50 text-primary-600 rounded-2xl group-hover:bg-primary-100/60 transition-colors">
+            <Settings size={22} />
           </div>
         </div>
       </div>
 
       {/* Tests Table Container */}
-      <div className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm">
+      <div className="bg-white rounded-[32px] border border-slate-150 overflow-hidden shadow-[0_12px_36px_-6px_rgba(0,0,0,0.02)]">
         {isLoading ? (
           <div className="p-8">
             <Loader type="table" count={4} />

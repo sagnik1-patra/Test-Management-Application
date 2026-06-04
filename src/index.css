@@ -1,7 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
-
-/* Import Modern Typography */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 @theme {
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -73,3 +71,61 @@
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* Animations */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-floating {
+  animation: floating 8s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: slide-up 0.2s ease-out forwards;
+}
+
+/* Modern Typography Tweaks */
+.text-xxs {
+  font-size: 0.6875rem;
+}
+.text-3xs {
+  font-size: 0.5625rem;
+}
+.text-xxs, .text-3xs {
+  letter-spacing: 0.05em;
+}
+

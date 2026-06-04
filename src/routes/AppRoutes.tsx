@@ -29,6 +29,8 @@ const Layout: React.FC = () => {
         {/* Scrollable page content */}
         <main className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8">
           <Routes>
+            {/* Default route – show dashboard when at '/' */}
+            <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="tests/create" element={<TestForm />} />
             <Route path="tests/edit/:id" element={<TestForm />} />

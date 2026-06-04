@@ -129,7 +129,7 @@ export const PreviewPublish: React.FC = () => {
         <div className="md:col-span-1 space-y-5">
           
           {/* Exam Details Card */}
-          <div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm space-y-4 select-none">
+          <div className="bg-white p-6 rounded-[28px] border border-slate-150 shadow-[0_10px_30px_rgba(0,0,0,0.015)] space-y-4 select-none">
             <h3 className="text-xs font-heading font-bold text-slate-400 uppercase tracking-wider">
               Test Summary
             </h3>
@@ -198,7 +198,7 @@ export const PreviewPublish: React.FC = () => {
           </div>
 
           {/* Test Instructions Card */}
-          <div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm space-y-3 select-none">
+          <div className="bg-white p-6 rounded-[28px] border border-slate-150 shadow-[0_10px_30px_rgba(0,0,0,0.015)] space-y-3 select-none">
             <h3 className="text-xs font-heading font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1">
               <Info size={13} />
               Candidate Instructions
@@ -213,7 +213,7 @@ export const PreviewPublish: React.FC = () => {
         {/* Questions Preview List (2 columns) */}
         <div className="md:col-span-2 space-y-5">
           
-          <div className="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+          <div className="bg-white p-6 md:p-8 rounded-[32px] border border-slate-150 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.025)] space-y-6">
             <h3 className="text-sm font-heading font-bold text-slate-800 border-b border-slate-100 pb-3 flex items-center justify-between select-none">
               <span>Exam Question Sheet</span>
               <span className="text-xxs font-medium text-slate-400">Total Marks: {questions.reduce((sum, q) => sum + q.marks, 0)} Pts</span>

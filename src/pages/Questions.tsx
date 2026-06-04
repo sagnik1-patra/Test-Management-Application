@@ -206,7 +206,7 @@ export const Questions: React.FC = () => {
         
         {/* Left Side: Question List (5 columns) */}
         <div className="lg:col-span-5 space-y-4">
-          <div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm">
+          <div className="bg-white p-5 rounded-[28px] border border-slate-150 shadow-[0_10px_30px_rgba(0,0,0,0.015)]">
             <h3 className="text-sm font-heading font-bold text-slate-800 mb-4 flex items-center justify-between select-none">
               <span>Current Questions ({questions.length})</span>
               <span className="px-2 py-0.5 bg-primary-50 text-primary-600 text-3xs font-extrabold rounded-full">
@@ -228,10 +228,10 @@ export const Questions: React.FC = () => {
                     className={`p-4 rounded-2xl border transition-all duration-200 flex items-start gap-3 relative ${
                       editingQuestion?.id === q.id 
                         ? 'border-primary-400 bg-primary-50/20 shadow-sm shadow-primary-600/5'
-                        : 'border-slate-100 bg-slate-50/50 hover:bg-slate-50 hover:border-slate-200'
+                        : 'border-slate-100 bg-slate-50/50 hover:bg-white hover:border-slate-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.02)]'
                     }`}
                   >
-                    <span className="w-5 h-5 rounded-full bg-slate-200 text-slate-700 text-3xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="w-5 h-5 rounded-full bg-slate-100 text-slate-600 text-3xs font-bold flex items-center justify-center shrink-0 mt-0.5 border border-slate-200/60">
                       {idx + 1}
                     </span>
                     <div className="flex-1 min-w-0">
@@ -277,7 +277,7 @@ export const Questions: React.FC = () => {
 
         {/* Right Side: Builder Form (7 columns) */}
         <div className="lg:col-span-7">
-          <div className="bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-5">
+          <div className="bg-white p-6 md:p-8 rounded-[32px] border border-slate-150 shadow-[0_12px_36px_-6px_rgba(0,0,0,0.025)] space-y-5">
             <div className="flex items-center justify-between select-none">
               <h3 className="text-base font-heading font-black text-slate-800 flex items-center gap-2">
                 <Sparkles size={16} className="text-primary-500" />
